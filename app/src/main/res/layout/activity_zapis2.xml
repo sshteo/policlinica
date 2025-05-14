@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="Записаться"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/obvodka"
+            android:backgroundTint="@null"
+            android:drawableRight="@drawable/arrow_left"
+            android:textColor="#009951"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+
+            app:strokeColor="#009951"
+            app:strokeWidth="2dp"
+            app:backgroundTint="@null"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registerTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Выберите дату"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="16dp"
+            android:firstDayOfWeek="2"
+            android:minDate="1672531200000"
+            android:maxDate="1767225599000"
+            android:shownWeekCount="4"
+          />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal">>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:text="Далее"
+            android:textColor="#009951"
+            android:background="@drawable/obvodka"
+            android:backgroundTint="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="30dp"
+            app:strokeColor="#009951"
+            app:strokeWidth="2dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </LinearLayout>
+
+</LinearLayout>
+

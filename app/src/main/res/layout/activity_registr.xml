@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/imy"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Введите имя"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фамилия"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/fami"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Введите фамилию"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отчество"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/otche"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Введите отчество"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="День рождения"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/dd"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="ДД"
+                    android:inputType="number"
+                    android:maxLength="2" />
+                <EditText
+                    android:id="@+id/mm"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="ММ"
+                    android:inputType="number"
+                    android:maxLength="2" />
+                <EditText
+                    android:id="@+id/пп"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="ГГ"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Введите email"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Введите пароль"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Я согласен на обработку персональных данных"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#009951"
+            android:text="Регистрация"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+
+            app:strokeColor="#009951"
+            app:strokeWidth="2dp"
+            app:backgroundTint="@null"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            >
+
+            <TextView
+                android:id="@+id/forgotPasswordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Забыли пароль?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/vhodTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Вход"
+                android:textColor="#000000"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
